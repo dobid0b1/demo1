@@ -3,11 +3,17 @@ const router = require("express").Router();
 // ส่งตัวแปรแบบ ?
 router.get('/', function (req, res) {
     const {dd} = req.query
-    res.send(dd)
+
+    res.status(200).json({
+        status: true,
+        msg: 'Hello World',
+    })
 })
 
 // ส่งตัวแปรแบบฟังก์ชั่น
 router.get('/:id', (req, res) => {
+
+
     const {id, name} = req.params
     res.send(`id : ${id} ++ name : ${name}`)
 })
