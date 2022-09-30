@@ -3,7 +3,7 @@ const router = require("express").Router();
 // ส่งตัวแปรแบบ ?
 router.get('/', function (req, res) {
     const {dd} = req.query
-    res.send('m2')
+    res.send(dd)
 })
 
 // ส่งตัวแปรแบบฟังก์ชั่น
