@@ -9,7 +9,7 @@ const routes = require("./routes/mm1")
 app.use(routes)
 
 const routes2 = require("./routes/mm2")
-app.use(11)
+app.use(routes2)
 
 app.listen(port, () => {
     console.log(`Start port ${port}`)
